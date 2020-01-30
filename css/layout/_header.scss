@@ -1,0 +1,95 @@
+#titulo {
+    background-image: url('../../img/titulobg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: -60%;
+    min-height: 200px;
+}
+
+#titulo h1 {
+    font-size: 80px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    padding-top: 8%;
+    color: hsla(118, 100%, 50%, 0.4);
+    background-image: url('../../img/titulo.png');
+    -webkit-background-clip: text;
+    animation: titulo 15s infinite;
+}
+
+// Navegador
+.menu {
+    margin-top: -5%;
+    text-align: center;
+    background-color: black;
+    color: white;
+    min-width: 100%;
+    width: 100%;
+}
+
+.menu ul {
+    padding: 10px;
+    list-style-type: none;
+    min-width: 100%;
+    width: 100%;
+
+}
+
+.menu ul li {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.menu ul li a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.menu ul li a:hover {
+    background-color: #444;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+@keyframes titulo {
+    from {
+        background-position: left 0 top 0;
+    }
+    to {
+        background-position: left 1000px top 0;
+    }
+}
+
+// tablet
+@media(min-width: 768px) {
+    #titulo h1 {
+        font-size: 80px;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 0;
+        padding-top: 4%;
+        color: hsla(118, 100%, 50%, 0.4);
+        background-image: url('../../img/titulo.png');
+        -webkit-background-clip: text;
+        animation: titulo 15s infinite;
+    }
+}
+// Desde PC
+@media(min-width: 1024px) {
+    #titulo h1 {
+        font-size: 80px;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 0;
+        padding-top: 2%;
+        color: hsla(118, 100%, 50%, 0.4);
+        background-image: url('../../img/titulo.png');
+        -webkit-background-clip: text;
+        animation: titulo 15s infinite;
+    }
+}

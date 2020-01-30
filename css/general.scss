@@ -1,0 +1,29 @@
+// Core
+@import 'core/variables';
+
+// Layout
+@import 'layout/header';
+@import 'layout/footer';
+
+// Components
+@import 'components/buttons';
+@import 'components/forms';
+@import 'components/etc';
+
+// Pages
+@import 'pages/home';
+@import 'pages/raffle';
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    background-color: white;
+    opacity: 0.9;
+}

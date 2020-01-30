@@ -1,0 +1,265 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-image: url(../img/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container{
+  background-color: white;
+  opacity: 0.9;
+}
+
+/* CABECERA*/
+
+
+/* NAVEGADOR */
+
+
+
+/*CONTACTANOS*/
+
+
+
+/* LATERAL */
+#lateral img{
+  width: 150px;
+  height: auto;
+}
+
+/* CUERPO */
+
+.thumbnail{
+  background-color: black;
+}
+
+.thumbnail p{
+  padding: 10px;
+}
+
+.caption{
+  color: white;
+}
+
+
+/* CUERPO INDICE */
+
+.video{
+  text-align: center;
+}
+
+/* CUERPO DULCES*/
+
+.dulces{
+  padding: 15px;
+}
+
+/* CUERPO SALADOS */
+
+.salados{
+  padding: 15px;
+}
+
+/* CUERPO BEBIDAS */
+
+.bebidas {
+  padding: 15px;
+}
+
+/* CUERPO SORTEO*/
+#c-cuerpo{
+  text-align: center;
+}
+
+.formulario{
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.formulario h5{
+  text-align: center;
+}
+
+.sorteofile{
+  margin: 10px;
+}
+
+input.sortexto{
+  width: 100%;
+  border: 0;
+  background: black;
+  padding: 10px;
+  margin: 5px 0px 5px 0px;
+  outline: none;
+  color: white;
+  transition: 0.5s;
+}
+
+input.sortexto:focus{
+  box-shadow: 0 0 10px 4px #4CAF50;
+}
+
+input.sortbtn{
+  border: 0;
+  background: black;
+  color: #fff;
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+input.sortbtn:hover{
+  background: #4CAF50;
+}
+
+.ganadoranterior{
+  height: 150px;
+  width: auto;
+  vertical-align: middle;
+  text-align: center;
+  background-color: black;
+  background-image: url('../img/snow1.png'), url('../img/snow2.png'), url('../img/snow3.png');
+  animation: nieve 20s linear infinite;
+  margin-bottom: 10px;
+}
+
+@keyframes nieve {
+ 0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+ 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+
+.ganadoranterior b{
+  line-height: 50px;
+  font-size: 24px;
+  color: White;
+}
+
+.ganadoranterior p{
+  color: #4CAF50;
+  font-size: 20px;
+}
+
+.criterios .oculto {
+  width: 50%;
+  display: table;
+  height: auto;
+  overflow: visible;
+  background: black;
+  color: white;
+  transition: all 1s ease;
+}
+.no-oculto {
+  padding: 10px 10px 0 10px;
+}
+
+.no-oculto p{
+  color: #4CAF50;
+}
+
+table {
+  border-collapse: collapse;
+  text-align: center;
+}
+
+table, th, td {
+  border: 1px solid white;
+  padding: 5px;
+}
+
+.criterios input[type="checkbox"]:not(:checked) + .oculto {
+  height: 0;
+  opacity: 0;
+  display: block;
+}
+
+/* PIE */
+#pie{
+  background-color: black;
+  color: white;
+}
+
+.btn{
+  width: 50px;
+  height: 40px;
+  background: black;
+  margin: 5px;
+  border-radius: 30%;
+  color: #4CAF50;
+  overflow: hidden;
+  position: relative;
+}
+
+.btn i{
+  font-size: 24px;
+  transition: 0.4s linear;
+}
+
+.btn:hover i{
+  transform: scale(1.3);
+  color: #f1f1f1;
+}
+
+.btn::before{
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: #4CAF50;
+  transform: rotate(45deg);
+  left: -110%;
+  top: 90%;
+}
+
+.btn:hover::before{
+  animation: xD 0.7s 1;
+  top: -10%;
+  left: -10%;
+}
+
+@keyframes xD {
+  0%{
+    left: -110%;
+    top: 90%;
+  }50%{
+    left: 10%;
+    top: -30%;
+  }100%{
+    top: -10%;
+    left: -10%;
+  }
+}
+
+/* ARRIBA!! */
+html{
+  scroll-behavior: smooth;
+}
+
+section{
+  width: 100%;
+  height: 300vh;
+  background: url(bg.jpg) no-repeat;
+  background-size: cover;
+}
+
+.arriba{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: #4CAF50;
+  bottom: 20px;
+  right: 30px;
+
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  font-size: 22px;
+}
+
+.arriba:hover{
+  color: black;
+}

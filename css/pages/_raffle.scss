@@ -1,0 +1,114 @@
+/* CUERPO SORTEO*/
+#c-cuerpo {
+    text-align: center;
+}
+
+.formulario {
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+.formulario h5 {
+    text-align: center;
+}
+
+.sorteofile {
+    margin: 10px;
+}
+
+input.sortexto {
+    width: 100%;
+    border: 0;
+    background: black;
+    padding: 10px;
+    margin: 5px 0;
+    outline: none;
+    color: white;
+    transition: 0.5s;
+}
+
+input.sortexto:focus {
+    box-shadow: 0 0 10px 4px #4CAF50;
+}
+
+input.sortbtn {
+    border: 0;
+    background: black;
+    color: #fff;
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+input.sortbtn:hover {
+    background: #4CAF50;
+}
+
+.ganadoranterior {
+    height: 150px;
+    width: auto;
+    vertical-align: middle;
+    text-align: center;
+    background-color: black;
+    background-image: url('../img/snow1.png'), url('../img/snow2.png'), url('../img/snow3.png');
+    animation: nieve 20s linear infinite;
+    margin-bottom: 10px;
+}
+
+@keyframes nieve {
+    0% {
+        background-position: 0 0, 0 0, 0 0;
+    }
+    100% {
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+    }
+}
+
+.ganadoranterior b {
+    line-height: 50px;
+    font-size: 24px;
+    color: White;
+}
+
+.ganadoranterior p {
+    color: #4CAF50;
+    font-size: 20px;
+}
+
+.criterios .oculto {
+    width: 50%;
+    display: table;
+    height: auto;
+    overflow: visible;
+    background: black;
+    color: white;
+    transition: all 1s ease;
+}
+.no-oculto {
+    padding: 10px 10px 0;
+}
+
+.no-oculto p {
+    color: #4CAF50;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table,
+th,
+td {
+    border: 1px solid white;
+    padding: 5px;
+}
+
+.criterios input[type="checkbox"]:not(:checked) + .oculto {
+    height: 0;
+    opacity: 0;
+    display: block;
+}
