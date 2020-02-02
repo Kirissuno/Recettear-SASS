@@ -33,3 +33,25 @@ body {
 .container p{
     padding-left: 10px;
 }
+
+// tablet
+@media(min-width: 768px) {
+    .container {
+        margin-left: 3.8%;
+        width: 1200px;
+    }
+}
+// Desde PC
+@media(min-width: 1024px) {
+    .container {
+        margin-left: 5.5%;
+        width: 1550px;
+    }
+}
+
+@media(min-width: 1440px) {
+    .container {
+        margin-left: 7%;
+        width: 1600px;
+    }
+}

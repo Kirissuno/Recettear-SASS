@@ -1,176 +1,189 @@
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
-	<head>
-		<meta charset="utf-8">
-		<title>Recettear - Sorteos</title>
-		<link rel="stylesheet" href="../css/general.css">
-		<meta name="responsive" content="width=device-width, initial-scale=1">
 
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<head>
+	<meta charset="utf-8">
+	<title>Recettear</title>
+	<link rel="stylesheet" href="../css/general.css">
+	<meta name="responsive" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width" />
 
-		<link rel="icon" type="image/png" href="https://cdn0.iconfinder.com/data/icons/kameleon-free-pack-rounded/110/Food-Dome-512.png">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
 
 
+	<link rel="icon" type="image/png"
+		href="https://cdn0.iconfinder.com/data/icons/kameleon-free-pack-rounded/110/Food-Dome-512.png">
 
-	</head>
-	<body>
+</head>
 
-		<!-- CABECERA -->
-		<div style="margin-bottom:0;"  id="titulo">
-			<h1>Recettear</h1>
+<body>
+
+	<!-- CABECERA -->
+	<div id="titulo">
+		<h1>Recettear</h1>
+	</div>
+
+	<!-- Navegador -->
+	<div class="menu">
+		<ul>
+			<li>
+				<a href="../index.html">Inicio</a>
+			</li>
+			<li>
+				<a href="/otros/dulces.html">Dulces</a>
+			</li>
+			<li>
+				<a href="/otros/salados.html">Salados</a>
+			</li>
+			<li>
+				<a href="/otros/bebidas.html">Bebidas</a>
+			</li>
+			<li>
+				<a href="/otros/sorteos.html" class="active">Sorteos</a>
+			</li>
+		</ul>
+	</div>
+
+
+	<!-- CONTACTANOS -->
+	<div class="contactanos">
+		<div class="opcion">
+			<a
+				href="https://www.google.com/maps/place/Instituto+de+Educaci%C3%B3n+Secundaria+Jacarand%C3%A1/@37.544639,-5.8746387,630m/data=!3m2!1e3!4b1!4m5!3m4!1s0xd125ce603bed70f:0xcd0e9d8b39d715f0!8m2!3d37.544639!4d-5.87245?hl=es">
+				<i class="fas fa-map-marker-alt"></i>
+				<div class="texto">IES Jacarandá</div>
+			</a>
 		</div>
 
-		<!-- Navegador -->
-		<div class="menu">
-			<ul>
-				<li>
-					<a href="../index.html">Inicio</a>
-				</li>
-				<li>
-					<a href="dulces.html">Dulces</a>
-				</li>
-				<li>
-					<a href="salados.html">Salados</a>
-				</li>
-				<li>
-					<a href="bebidas.html">Bebidas</a>
-				</li>
-				<li>
-					<a href="sorteos.html" class="active">Sorteos</a>
-				</li>
-			</ul>
+		<div class="opcion">
+			<a href="mailto:arfilip.1h@gmail.com?subject">
+				<i class="far fa-envelope"></i>
+				<div class="texto">arfilip.1h@gmail.com</div>
+			</a>
 		</div>
 
-
-		<!-- CONTACTANOS -->
-		<div class="contactanos">
-			<div class="opcion">
-				<a href="https://www.google.com/maps/place/Instituto+de+Educaci%C3%B3n+Secundaria+Jacarand%C3%A1/@37.544639,-5.8746387,630m/data=!3m2!1e3!4b1!4m5!3m4!1s0xd125ce603bed70f:0xcd0e9d8b39d715f0!8m2!3d37.544639!4d-5.87245?hl=es">
-					<i class="fas fa-map-marker-alt"></i>
-					<div class="texto">IES Jacarandá</div>
-				</a>
-			</div>
-
-			<div class="opcion">
-				<a href="mailto:arfilip.1h@gmail.com?subject">
-					<i class="far fa-envelope"></i>
-					<div class="texto">arfilip.1h@gmail.com</div>
-				</a>
-			</div>
-
-			<div class="opcion">
+		<div class="opcion">
+			<a href="tel:+34664143747">
 				<i class="fas fa-mobile-alt"></i>
 				<div class="texto">+34 664143747</div>
-			</div>
+			</a>
 		</div>
+	</div>
 
-		<!-- CONTENIDO -->
-		<div class="container" style="margin-top:30px" >
-			<div>
+	<!-- CONTENIDO -->
+	<div class="container" style="margin-top:30px">
+		<div>
 
-				<!-- CUERPO -->
-				<div id="c-cuerpo">
+			<!-- CUERPO -->
+			<div id="c-cuerpo">
+				<br>
+				<h2>¿Quieres ganar este magnífico robot de cocina?</h2>
+				<img src="../img/robcocina.png" width="300px" height="auto">
+				<hr>
+				<h5>¡Lo único que debes hacer para participar en este maravilloso sorteo es enviarnos tu mejor receta de
+					navidad!</h5>
+				<hr>
+			</div>
+
+			<p>Rellena el siguiente formulario con tus datos y envíanos tu receta como documento adjunto:</p>
+			<br>
+			<div class="formulario">
+				<form class="sorteo" action="http://www.iesjacaranda-brenes.org/lmsgi/resultado.php" method="post">
+					<input class="sortexto" type="text" name="nombre" placeholder="Nombre y Apellidos *" maxlength="50"
+						required>
+					<b>Fecha de nacimiento</b>
+					<input class="sortexto" type="date" name="fechanacimiento" value="2000-01-01">
+					<input class="sortexto" type="text" name="ciudad" placeholder="Ciudad *" maxlength="20" required>
+					<input class="sortexto" type="number" name="codpost" placeholder="Código Postal *" min="1000"
+						max="53000" required>
+					<input class="sortexto" type="text" name="direccion" placeholder="Dirección *" required>
+					<input class="sortexto" type="email" name="correo" placeholder="Correo electrónico *" required>
 					<br>
-					<h2>¿Quieres ganar este magnífico robot de cocina?</h2>
-					<img src="../img/robcocina.png" width="300px" height="auto">
-					<hr>
-					<h5>¡Lo único que debes hacer para participar en este maravilloso sorteo es enviarnos tu mejor receta de navidad!</h5>
-					<hr>
-				</div>
+					<div>
+						<b>Receta *</b>
+						<input class="sortexto" type="file" class="sorteofile" required>
+					</div>
+					<b style="color: red;">* Obligatorio</b>
 
-					<p>Rellena el siguiente formulario con tus datos y envíanos tu receta como documento adjunto:</p>
 					<br>
-					<div class="formulario">
-						<form class="sorteo" action="http://www.iesjacaranda-brenes.org/lmsgi/resultado.php" method="post">
-							<input class="sortexto" type="text" name="nombre" placeholder="Nombre y Apellidos *" maxlength="50" required>
-							<b>Fecha de nacimiento</b>
-							<input class="sortexto" type="date" name="fechanacimiento" value="2000-01-01">
-							<input class="sortexto" type="text" name="ciudad" placeholder="Ciudad *" maxlength="20" required>
-							<input class="sortexto" type="number" name="codpost" placeholder="Código Postal *" min="1000" max="53000" required>
-							<input class="sortexto" type="text" name="direccion" placeholder="Dirección *" required>
-							<input class="sortexto" type="email" name="correo" placeholder="Correo electrónico *" required>
-							<br>
-							<div>
-								<b>Receta *</b>
-								<input class="sortexto" type="file" class="sorteofile" required>
+
+					<div align="right">
+						<input class="sortbtn" type="submit" name="enviar" value="Enviar">
+					</div>
+
+					<div class="criterios" align="center">
+						<b>Criterios de selección</b>
+						<input type="checkbox" name="criterios">
+						<div class="oculto">
+							<div class="no-oculto">
+								<table>
+									<tr>
+										<td> </td>
+										<td> Originalidad </td>
+										<td> Sabor </td>
+										<td> Aspecto </td>
+										<td> Coste </td>
+										<td> Dificultad </td>
+									</tr>
+									<tr>
+										<td>Calificación</td>
+										<td> 5/5 </td>
+										<td> 5/5 </td>
+										<td> 5/5 </td>
+										<td> 5/5 </td>
+										<td> 5/5 </td>
+									</tr>
+								</table>
+								<p>La receta se evaluará según dichas notas y habrá un ranking mediante el cual podremos
+									saber el ganador, en caso de empate se reevaluarán las recetas.</p>
 							</div>
-							<b style="color: red;">* Obligatorio</b>
-
-							<br>
-
-							<div align="right">
-								<input class="sortbtn" type="submit" name="enviar" value="Enviar">
-							</div>
-
-							<div class="criterios" align="center">
-								<b>Criterios de selección</b>
-									<input type="checkbox" name="criterios">
-									<div class="oculto">
-										<div class="no-oculto">
-											<table>
-												<tr>
-													<td> </td>
-													<td> Originalidad </td>
-													<td> Sabor </td>
-													<td> Aspecto </td>
-													<td> Coste </td>
-													<td> Dificultad </td>
-												</tr>
-												<tr>
-													<td>Calificación</td>
-													<td> 5/5 </td>
-													<td> 5/5 </td>
-													<td> 5/5 </td>
-													<td> 5/5 </td>
-													<td> 5/5 </td>
-												</tr>
-											</table>
-											<p>La receta se evaluará según dichas notas y habrá un ranking mediante el cual podremos saber el ganador, en caso de empate se reevaluarán las recetas.</p>
-										</div>
-									</div>
-							</div>
-
-							<hr>
-						</form>
-						<h5>El ganador será elegido el día 31 de Enero de 2019 por nuestros mejores chefs.</h5>
-						<hr>
-						<h3 align="center" style="color:red">Sorteos anteriores</h3>
-						<div class="ganadoranterior">
-
-							<b>Diciembre 2018</b>
-							<p>Robert Filip, Tocina (Sevilla)</p>
-							<b>¡¡FELICIDADES!!</b>
 						</div>
+					</div>
 
+					<hr>
+				</form>
+				<h5>El ganador será elegido el día 31 de Enero de 2019 por nuestros mejores chefs.</h5>
+				<hr>
+				<h3 align="center" style="color:red">Sorteos anteriores</h3>
+				<div class="ganadoranterior">
+
+					<b>Diciembre 2018</b>
+					<p>Robert Filip, Tocina (Sevilla)</p>
+					<b>¡¡FELICIDADES!!</b>
 				</div>
+
 			</div>
 		</div>
-		<br>
+	</div>
 
-		<!-- FOOTER -->
-		<div class="container" style="margin-bottom:0" id="pie" align="center">
-		<div class="middle">
-      <a class="btn" href="https://www.facebook.com/robertxfilip" target="_blank">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a class="btn" href="https://twitter.com/Clonossum" target="_blank">
-        <i class="fab fa-twitter"></i>
-      </a>
-      <a class="btn" href="https://plus.google.com/+Clonossum" target="_blank">
-        <i class="fab fa-google"></i>
-      </a>
-      <a class="btn" href="https://www.instagram.com/robertxfilip/" target="_blank">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a class="btn" href="https://www.youtube.com/channel/UC6LRfk9oLqdZeldPgJlTYrg?view_as=subscriber" target="_blank">
-        <i class="fab fa-youtube"></i>
-      </a>
-    </div>
-		<p>Copyright © 2018 · Recettear by Robert Filip</p>
+	<br>
+
+	<!-- FOOTER -->
+	<div class="container" id="pie" align="center">
+		<div>
+			<a class="btn" href="https://www.facebook.com/robertxfilip" target="_blank">
+				<i class="fab fa-facebook-f"></i>
+			</a>
+			<a class="btn" href="https://twitter.com/Kirissuno" target="_blank">
+				<i class="fab fa-twitter"></i>
+			</a>
+			<a class="btn" href="https://plus.google.com/+Clonossum" target="_blank">
+				<i class="fab fa-google"></i>
+			</a>
+			<a class="btn" href="https://www.instagram.com/robertxfilip/" target="_blank">
+				<i class="fab fa-instagram"></i>
+			</a>
+			<a class="btn" href="https://www.youtube.com/channel/UC6LRfk9oLqdZeldPgJlTYrg?view_as=subscriber"
+				target="_blank">
+				<i class="fab fa-youtube"></i>
+			</a>
 		</div>
+		<p>Copyright © 2018 · Recettear by Robert Filip</p>
+	</div>
 
-		<!-- ARRIBA!! xD -->
-		<a class="arriba" href="#"> <i class="fas fa-arrow-up"></i></a>
+	<!-- ARRIBA!! xD -->
+	<a class="arriba" href="#"> <i class="fas fa-arrow-up"></i></a>
 
-	</body>
+</body>
+
 </html>

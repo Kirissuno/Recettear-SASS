@@ -48,28 +48,40 @@
     background-position: left 0 top 0; }
   to {
     background-position: left 1000px top 0; } }
+@media (min-width: 375px) {
+  #titulo {
+    margin-right: -86.5%; } }
+@media (min-width: 425px) {
+  #titulo {
+    margin-right: -64%; }
+
+  #titulo h1 {
+    padding-top: 6%; } }
 @media (min-width: 768px) {
   #titulo h1 {
-    font-size: 80px;
-    text-transform: uppercase;
-    text-align: center;
-    margin: 0;
-    padding-top: 4%;
-    color: rgba(9, 255, 0, 0.4);
-    background-image: url("../../img/titulo.png");
-    -webkit-background-clip: text;
-    animation: titulo 15s infinite; } }
+    padding-top: 4%; }
+
+  .menu {
+    margin-left: 30%;
+    margin-top: -4%;
+    width: 800px; } }
 @media (min-width: 1024px) {
   #titulo h1 {
-    font-size: 80px;
-    text-transform: uppercase;
-    text-align: center;
-    margin: 0;
-    padding-top: 2%;
-    color: rgba(9, 255, 0, 0.4);
-    background-image: url("../../img/titulo.png");
-    -webkit-background-clip: text;
-    animation: titulo 15s infinite; } }
+    padding-top: 3%; }
+
+  .menu {
+    margin-left: 40%;
+    margin-top: -3%; } }
+@media (min-width: 1440px) {
+  #titulo {
+    margin-right: 0%; }
+
+  #titulo h1 {
+    padding-top: 1.5%; }
+
+  .menu {
+    margin-left: 30%;
+    margin-top: -1.7%; } }
 #pie {
   background-color: black;
   color: white; }
@@ -275,5 +287,18 @@ body {
 
 .container p {
   padding-left: 10px; }
+
+@media (min-width: 768px) {
+  .container {
+    margin-left: 3.8%;
+    width: 1200px; } }
+@media (min-width: 1024px) {
+  .container {
+    margin-left: 5.5%;
+    width: 1550px; } }
+@media (min-width: 1440px) {
+  .container {
+    margin-left: 7%;
+    width: 1600px; } }
 
 /*# sourceMappingURL=general.css.map */
