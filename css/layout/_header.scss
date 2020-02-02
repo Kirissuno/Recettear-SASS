@@ -1,5 +1,5 @@
 #titulo {
-    background-image: url('../../img/titulobg.png');
+    background-image: url('../img/titulobg.png');
     background-repeat: no-repeat;
     background-size: cover;
     margin-right: -118.5%;
@@ -13,7 +13,7 @@
     margin: 0;
     padding-top: 8%;
     color: hsla(118, 100%, 50%, 0.4);
-    background-image: url('../../img/titulo.png');
+    background-image: url('../img/titulo.png');
     -webkit-background-clip: text;
     animation: titulo 15s infinite;
 }
