@@ -2,7 +2,7 @@
     background-image: url('../../img/titulobg.png');
     background-repeat: no-repeat;
     background-size: cover;
-    margin-right: -60%;
+    margin-right: -118.5%;
     min-height: 200px;
 }
 
@@ -24,21 +24,16 @@
     text-align: center;
     background-color: black;
     color: white;
-    min-width: 100%;
-    width: 100%;
+    width: 700px;
 }
 
 .menu ul {
-    padding: 10px;
     list-style-type: none;
-    min-width: 100%;
-    width: 100%;
-
 }
 
 .menu ul li {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .menu ul li a {
