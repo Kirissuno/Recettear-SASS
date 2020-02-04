@@ -2,15 +2,15 @@
   background-image: url("../img/titulobg.png");
   background-repeat: no-repeat;
   background-size: cover;
-  margin-right: -118.5%;
-  min-height: 200px; }
+  min-height: 200px;
+  width: 100%; }
 
 #titulo h1 {
-  font-size: 100px;
+  font-size: 50px;
   text-transform: uppercase;
   text-align: center;
   margin: 0;
-  padding-top: 8%;
+  padding-top: 20%;
   color: rgba(9, 255, 0, 0.4);
   background-image: url("../img/titulo.png");
   -webkit-background-clip: text;
@@ -21,9 +21,10 @@
   text-align: center;
   background-color: black;
   color: white;
-  width: 700px; }
+  width: 100%; }
 
 .menu ul {
+  margin-left: -8%;
   list-style-type: none; }
 
 .menu ul li {
@@ -49,48 +50,82 @@
   to {
     background-position: left 1000px top 0; } }
 @media (min-width: 375px) {
-  #titulo {
-    margin-right: -86.5%; } }
-@media (min-width: 425px) {
-  #titulo {
-    margin-right: -64%; }
-
   #titulo h1 {
-    padding-top: 6%; } }
+    padding-top: 4%; } }
+@media (min-width: 425px) {
+  #titulo h1 {
+    padding-top: 3%; } }
 @media (min-width: 768px) {
   #titulo h1 {
-    padding-top: 4%; }
+    padding-top: 8%;
+    font-size: 80px; }
 
   .menu {
-    margin-left: 30%;
-    margin-top: -4%;
-    width: 800px; } }
+    margin-top: -4%; } }
 @media (min-width: 1024px) {
   #titulo h1 {
-    padding-top: 3%; }
+    padding-top: 5%; }
 
   .menu {
-    margin-left: 40%;
-    margin-top: -3%; } }
+    margin-left: 10%;
+    width: 80%;
+    margin-top: -2.3%; } }
 @media (min-width: 1440px) {
-  #titulo {
-    margin-right: 0%; }
-
   #titulo h1 {
     padding-top: 1.5%; }
 
   .menu {
-    margin-left: 30%;
     margin-top: -1.7%; } }
 #pie {
+  padding-top: 20px;
   background-color: black;
   color: white; }
+
+#lateral img {
+  width: 80%;
+  height: auto; }
+
+@media (min-width: 768px) {
+  #lateral img {
+    width: 60%;
+    height: auto; } }
+@media (min-width: 1024px) {
+  #lateral img {
+    width: 30%;
+    height: auto; } }
+.thumbnail {
+  background-color: black;
+  width: 50%;
+  padding-top: 2%; }
+
+.thumbnail a img {
+  width: 70%;
+  height: auto; }
+
+.thumbnail p {
+  padding-bottom: 5px;
+  padding-top: -20px; }
+
+.caption {
+  color: white; }
+
+/* CUERPO DULCES*/
+.dulces {
+  padding: 15px; }
+
+/* CUERPO SALADOS */
+.salados {
+  padding: 15px; }
+
+/* CUERPO BEBIDAS */
+.bebidas {
+  padding: 15px; }
 
 .btn {
   width: 50px;
   height: 40px;
   margin: 10px;
-  font-size: 50px;
+  font-size: 35px;
   color: #4CAF50; }
 
 .btn, .btn:link, .btn:visited, .btn:hover {
@@ -103,86 +138,24 @@
   transform: scale(1.3);
   color: #f1f1f1; }
 
-.contactanos {
-  position: fixed;
-  top: 65%;
-  z-index: 99999;
-  left: 0; }
-
-.opcion {
-  cursor: pointer;
-  position: relative; }
-
-.opcion a {
-  color: black; }
-
-.opcion a:hover {
-  text-decoration: none; }
-
-.opcion i {
-  display: block;
-  width: 60px;
-  height: 60px;
-  text-align: center;
-  line-height: 60px;
-  background: #afff7a;
-  font-size: 20px;
-  transition: 0.6s; }
-
-.opcion:hover i {
-  color: #3498db; }
-
-.texto {
-  position: absolute;
-  height: 60px;
-  width: 200px;
-  background: black;
-  color: white;
-  top: 0;
-  z-index: -1;
-  left: -200px;
-  line-height: 60px;
-  text-align: center;
-  transition: 0.6s; }
-
-.opcion:hover .texto {
-  left: 60px; }
-
-/* ARRIBA!! */
-html {
-  scroll-behavior: smooth; }
-
-section {
-  width: 100%;
-  height: 300vh;
-  background: url("bg.jpg") no-repeat;
-  background-size: cover; }
-
 .arriba {
   position: fixed;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   background: #4CAF50;
   bottom: 20px;
   right: 30px;
   text-decoration: none;
   text-align: center;
-  line-height: 50px;
+  line-height: 40px;
   color: white;
-  font-size: 22px; }
+  font-size: 25px; }
 
 .arriba:hover {
   color: black; }
 
-.video {
-  text-align: center; }
-
-/* CUERPO SORTEO*/
-#c-cuerpo {
-  text-align: center; }
-
 .formulario {
-  max-width: 600px;
+  max-width: 80%;
   margin: auto;
   padding: 0 10px;
   overflow: hidden; }
@@ -209,7 +182,7 @@ input.sortexto:focus {
 input.sortbtn {
   border: 0;
   background: black;
-  color: #fff;
+  color: white;
   padding: 12px 50px;
   border-radius: 20px;
   cursor: pointer;
@@ -217,6 +190,32 @@ input.sortbtn {
 
 input.sortbtn:hover {
   background: #4CAF50; }
+
+.contactanos {
+  position: fixed;
+  top: 45%;
+  z-index: 99999;
+  left: 0; }
+
+.opcion a {
+  color: black; }
+
+.opcion i {
+  display: block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  background: #afff7a;
+  font-size: 20px; }
+
+/* ARRIBA!! */
+html {
+  scroll-behavior: smooth; }
+
+/* CUERPO SORTEO*/
+#c-cuerpo {
+  text-align: center; }
 
 .ganadoranterior {
   height: 150px;
@@ -226,7 +225,8 @@ input.sortbtn:hover {
   background-color: black;
   background-image: url("../img/snow1.png"), url("../img/snow2.png"), url("../img/snow3.png");
   animation: nieve 20s linear infinite;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  padding-bottom: 10px; }
 
 @keyframes nieve {
   0% {
@@ -236,11 +236,15 @@ input.sortbtn:hover {
 .ganadoranterior b {
   line-height: 50px;
   font-size: 24px;
-  color: White; }
+  color: white; }
 
 .ganadoranterior p {
   color: #4CAF50;
   font-size: 20px; }
+
+.criterios {
+  visibility: hidden;
+  margin-bottom: -15%; }
 
 .criterios .oculto {
   width: 50%;
@@ -251,6 +255,10 @@ input.sortbtn:hover {
   color: white;
   transition: all 1s ease; }
 
+@media (min-width: 1024px) {
+  .criterios {
+    margin-bottom: 0%;
+    visibility: visible; } }
 .no-oculto {
   padding: 10px 10px 0; }
 
@@ -283,22 +291,30 @@ body {
 .container {
   background-color: white;
   opacity: 0.9;
-  width: 700px; }
+  width: 100%; }
 
 .container p {
   padding-left: 10px; }
 
+.video {
+  text-align: center; }
+
+iframe {
+  width: 90%;
+  height: 90%; }
+
 @media (min-width: 768px) {
   .container {
-    margin-left: 3.8%;
-    width: 1200px; } }
+    width: 90%;
+    margin-left: 5%; }
+
+  iframe {
+    height: 370px; } }
 @media (min-width: 1024px) {
-  .container {
-    margin-left: 5.5%;
-    width: 1550px; } }
+  iframe {
+    height: 460px; } }
 @media (min-width: 1440px) {
-  .container {
-    margin-left: 7%;
-    width: 1600px; } }
+  iframe {
+    height: 750px; } }
 
 /*# sourceMappingURL=general.css.map */

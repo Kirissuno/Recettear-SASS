@@ -1,0 +1,41 @@
+.btn {
+    width: $btnWidth;
+    height: $btnHeight;
+    margin: $btnMargin;
+    font-size: $btnFontSize;
+    color: $btnColor;
+}
+
+.btn, .btn:link, .btn:visited, .btn:hover{
+    text-decoration: $btnTextDecoration;
+}
+
+.btn i {
+    font-size: $btnFontSize;
+}
+
+.btn:hover i {
+    transform: $btnHoverTransform;
+    color: $btnHoverColor;
+}
+
+
+// SCROLL ARRIBA
+.arriba {
+    position: $scrollPosition;
+    width: $scrollWidth;
+    height: $scrollHeight;
+    background: $scrollBackground;
+    bottom: $scrollBottom;
+    right: $scrollRight;
+
+    text-decoration: $scrollTextDecoration;
+    text-align: $scrollTextAlign;
+    line-height: $scrollLineHeight;
+    color: $scrollColor;
+    font-size: $scrollFontSize;
+}
+
+.arriba:hover {
+    color: $scrollHoverColor;
+}

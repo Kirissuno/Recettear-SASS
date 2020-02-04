@@ -1,38 +1,58 @@
 // LATERAL
-
 #lateral img {
-    width: 150px;
-    height: auto;
+    width: $indexImageWidth;
+    height: $indexImageHeight;
 }
 
+@media(min-width: 768px) {
+    #lateral img {
+        width: $indexImageWidthT;
+        height: $indexImageHeight;
+    }
+}
+// Desde PC
+@media(min-width: 1024px) {
+    #lateral img {
+        width: $indexImageWidthPT;
+        height: $indexImageHeight;
+    }
+}
 
 // BODY
 .thumbnail {
-    background-color: black;
+    background-color: $thumbnailBackgroundColor;
+    width: $thumbnailWidth;
+    padding-top: $thumbnailPaddingTop;
+}
+
+.thumbnail a img{
+    width: $thumbnailImageWidth;
+    height: $thumbnailImageHeight;
 }
 
 .thumbnail p {
-    padding: 10px;
+    padding-bottom: $thumbnailParaphPaddingBottom;
+    padding-top: $thumbnailParaphPaddingTop;
 }
 
 .caption {
-    color: white;
+    color: $captionColor;
 }
 
 /* CUERPO DULCES*/
 
 .dulces {
-    padding: 15px;
+    padding: $categoriesPadding;
 }
 
 /* CUERPO SALADOS */
 
 .salados {
-    padding: 15px;
+    padding: $categoriesPadding;
 }
 
 /* CUERPO BEBIDAS */
 
 .bebidas {
-    padding: 15px;
+    padding: $categoriesPadding;
 }

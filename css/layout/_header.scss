@@ -1,55 +1,56 @@
 #titulo {
-    background-image: url('../img/titulobg.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-right: -118.5%;
-    min-height: 200px;
+    background-image: $headerBackgroundImage;
+    background-repeat: $headerBackgroundRepeat;
+    background-size: $headerBackgroundSize;
+    min-height: $headerBackgroundMinHeight;
+    width: $headerBackgroundWidth;
 }
 
 #titulo h1 {
-    font-size: 100px;
-    text-transform: uppercase;
-    text-align: center;
+    font-size: $headerTitleFontSize;
+    text-transform: $headerTextTransform;
+    text-align: $headerTextAlign;
     margin: 0;
-    padding-top: 8%;
-    color: hsla(118, 100%, 50%, 0.4);
-    background-image: url('../img/titulo.png');
-    -webkit-background-clip: text;
-    animation: titulo 15s infinite;
+    padding-top: $headerTextPaddingTop;
+    color: $headerTextColor;
+    background-image: $headerTextBackgroundImage;
+    -webkit-background-clip: $headerTextWebkit;
+    animation: $headerTextAnimation;
 }
 
 // Navegador
 .menu {
-    margin-top: -10%;
-    text-align: center;
-    background-color: black;
-    color: white;
-    width: 700px;
+    margin-top: $menuMarginTop;
+    text-align: $menuTextAlign;
+    background-color: $menuBackgroundColor;
+    color: $menuTextColor;
+    width: $menuWidth;
 }
 
 .menu ul {
-    list-style-type: none;
+    margin-left: $menuULMarginLeft;
+    list-style-type: $menuULListStyleType;
 }
 
 .menu ul li {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: $menuLIPaddingTop;
+    padding-bottom: $menuLIPaddingBottom;
 }
 
 .menu ul li a {
-    color: white;
-    padding: 14px 16px;
-    font-size: 20px;
-    text-decoration: none;
-    text-transform: uppercase;
+    color: $menuAColor;
+    padding: $menuAPadding;
+    font-size: $menuAFontSize;
+    text-decoration: $menuATextDecoration;
+    text-transform: $menuATextTransform;
 }
 
 .menu ul li a:hover {
-    background-color: #444;
+    background-color: $menuAHoverBackgroundColor;
 }
 
 .active {
-    background-color: #4CAF50;
+    background-color: $menuActive;
 }
 
 @keyframes titulo {
@@ -62,51 +63,44 @@
 }
 
 @media(min-width: 375px) {
-    #titulo {
-        margin-right: -86.5%;
+    #titulo h1{
+        padding-top: $headerTextPaddingTop375;
     }
 }
 
 @media(min-width: 425px) {
-    #titulo {
-        margin-right: -64%;
-    }
     #titulo h1 {
-        padding-top: 6%;
+        padding-top: $headerTextPaddingTop425;
     }
 }
 
 // tablet
 @media(min-width: 768px) {
     #titulo h1 {
-        padding-top: 4%;
+        padding-top: $headerTextPaddingTopT;
+        font-size: $headerTitleFontSizeT;
     }
     .menu {
-        margin-left: 30%;
-        margin-top: -4%;
-        width: 800px;
+        margin-top: $menuMarginTopT;
     }
 }
 // Desde PC
 @media(min-width: 1024px) {
     #titulo h1 {
-        padding-top: 3%;
+        padding-top: $headerTextPaddingTopPT;
     }
     .menu {
-        margin-left: 40%;
-        margin-top: -3%;
+        margin-left: $menuMarginLeftPT;
+        width: $menuWidthPT;
+        margin-top: $menuMarginTopPT;
     }
 }
 
 @media(min-width: 1440px) {
-    #titulo {
-        margin-right: 0%;
-    }
     #titulo h1 {
-        padding-top: 1.5%;
+        padding-top: $headerTextPaddingTopPC;
     }
     .menu {
-        margin-left: 30%;
-        margin-top: -1.7%;
+        margin-top: $menuMarginTopPC;
     }
 }

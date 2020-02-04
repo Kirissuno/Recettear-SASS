@@ -1,61 +1,18 @@
 /* CUERPO SORTEO*/
 #c-cuerpo {
-    text-align: center;
-}
-
-.formulario {
-    max-width: 600px;
-    margin: auto;
-    padding: 0 10px;
-    overflow: hidden;
-}
-
-.formulario h5 {
-    text-align: center;
-}
-
-.sorteofile {
-    margin: 10px;
-}
-
-input.sortexto {
-    width: 100%;
-    border: 0;
-    background: black;
-    padding: 10px;
-    margin: 5px 0;
-    outline: none;
-    color: white;
-    transition: 0.5s;
-}
-
-input.sortexto:focus {
-    box-shadow: 0 0 10px 4px #4CAF50;
-}
-
-input.sortbtn {
-    border: 0;
-    background: black;
-    color: #fff;
-    padding: 12px 50px;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-input.sortbtn:hover {
-    background: #4CAF50;
+    text-align: $raffleTextAlign;
 }
 
 .ganadoranterior {
-    height: 150px;
-    width: auto;
-    vertical-align: middle;
-    text-align: center;
-    background-color: black;
-    background-image: url('../img/snow1.png'), url('../img/snow2.png'), url('../img/snow3.png');
-    animation: nieve 20s linear infinite;
-    margin-bottom: 10px;
+    height: $raffleWinnerHeight;
+    width: $raffleWinnerWidth;
+    vertical-align: $raffleWinnerVerticalAlign;
+    text-align: $raffleWinnerTextAlign;
+    background-color: $raffleWinnerBGColor;
+    background-image: $raffleWinnerBGImg;
+    animation: $raffleWinnerAnimation;
+    margin-bottom: $raffleWinnerMarginBottom;
+    padding-bottom: $raffleWinnerPaddingBottom;
 }
 
 @keyframes nieve {
@@ -68,47 +25,60 @@ input.sortbtn:hover {
 }
 
 .ganadoranterior b {
-    line-height: 50px;
-    font-size: 24px;
-    color: White;
+    line-height: $raffleWinnerLineHeight;
+    font-size: $raffleWinnerFontSize;
+    color: $raffleWinnerColor;
 }
 
 .ganadoranterior p {
-    color: #4CAF50;
-    font-size: 20px;
+    color: $raffleWinnerTextColor;
+    font-size: $raffleWinnerTextFontSize;
+}
+
+.criterios{
+    visibility: $raffleCriteriosVisibility;
+    margin-bottom: $raffleCriteriosMarginBottom;
 }
 
 .criterios .oculto {
-    width: 50%;
-    display: table;
-    height: auto;
-    overflow: visible;
-    background: black;
-    color: white;
-    transition: all 1s ease;
+    width: $raffleCriteriosWidth;
+    display: $raffleCriteriosDisplay;
+    height: $raffleCriteriosHeight;
+    overflow: $raffleCriteriosOverflow;
+    background: $raffleCriteriosBG;
+    color: $raffleCriteriosColor;
+    transition: $raffleCriteriosTransition;
 }
+
+@media(min-width: 1024px) {
+    .criterios{
+        margin-bottom: $raffleCriteriosMarginBottomPT;
+        visibility: $raffleCriteriosVisibilityPT;
+    }
+}
+
 .no-oculto {
-    padding: 10px 10px 0;
+    padding: $raffleCriteriosPadding;
 }
 
 .no-oculto p {
-    color: #4CAF50;
+    color: $raffleCriteriosTextColor;
 }
 
 table {
-    border-collapse: collapse;
-    text-align: center;
+    border-collapse: $raffleCriteriosTableBorder;
+    text-align: $raffleCriteriosTableTextAlign;
 }
 
 table,
 th,
 td {
-    border: 1px solid white;
-    padding: 5px;
+    border: $raffleTableBorder;
+    padding: $raffleTablePadding;
 }
 
 .criterios input[type="checkbox"]:not(:checked) + .oculto {
-    height: 0;
-    opacity: 0;
-    display: block;
+    height: $raffleCriteriosOcultoHeight;
+    opacity: $raffleCriteriosOcultoOpacity;
+    display: $raffleCriteriosOcultoDisplay;
 }

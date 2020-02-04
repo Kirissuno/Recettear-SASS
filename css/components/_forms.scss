@@ -1,0 +1,44 @@
+//Formularios concurso
+.formulario {
+    max-width: $formMaxWidth;
+    margin: $formMargin;
+    padding: $formPadding;
+    overflow: $formOverflow;
+}
+
+.formulario h5 {
+    text-align: $formTextAlign;
+}
+
+.sorteofile {
+    margin: $formFileMargin;
+}
+
+input.sortexto {
+    width: $formInputWidth;
+    border: $formInputBorder;
+    background: $formInputBackground;
+    padding: $formInputPadding;
+    margin: $formInputMargin;
+    outline: $formInputOutline;
+    color: $formInputColor;
+    transition: $formInputTransition;
+}
+
+input.sortexto:focus {
+    box-shadow: $formInputFocusShadow;
+}
+
+input.sortbtn {
+    border: $formButtonBorder;
+    background: $formButtonBackground;
+    color: $formButtonColor;
+    padding: $formButtonPadding;
+    border-radius: $formButtonBorderRadius;
+    cursor: $formButtonCursor;
+    transition: $formButtonTransition;
+}
+
+input.sortbtn:hover {
+    background: $formButtonHoverBackground;
+}

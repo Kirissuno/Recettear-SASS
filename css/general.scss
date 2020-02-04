@@ -4,6 +4,7 @@
 // Layout
 @import 'layout/header';
 @import 'layout/footer';
+@import 'layout/grid';
 
 // Components
 @import 'components/buttons';
@@ -11,47 +12,56 @@
 @import 'components/etc';
 
 // Pages
-@import 'pages/home';
 @import 'pages/raffle';
 
 
 body {
     margin: 0;
     padding: 0;
-    background-image: $imagenBackgroundPag;
+    background-image: $pagesBackground;
     background-repeat: no-repeat;
     background-size: cover;
-    font-size: 30px;
+    font-size: $containersFontSize;
 }
 
 .container {
-    background-color: $colorContainers;
-    opacity: $opacidadContainers;
-    width: 700px;
+    background-color: $containersColor;
+    opacity: $containersOpacity;
+    width: $containersWidth;
 }
 
 .container p{
-    padding-left: 10px;
+    padding-left: $containersPaddingFromLeft;
+}
+
+.video{
+    text-align: center;
+}
+
+iframe{
+    width: $containersVideoWidth;
+    height: $containersVideoWidth;
 }
 
 // tablet
 @media(min-width: 768px) {
     .container {
-        margin-left: 3.8%;
-        width: 1200px;
+        width: $containersWidthT;
+        margin-left: $containerMarginLeftT;
+    }
+    iframe{
+        height: $containersVideoHeightT;
     }
 }
 // Desde PC
 @media(min-width: 1024px) {
-    .container {
-        margin-left: 5.5%;
-        width: 1550px;
+    iframe{
+        height: $containersVideoHeightPT;
     }
 }
 
 @media(min-width: 1440px) {
-    .container {
-        margin-left: 7%;
-        width: 1600px;
+    iframe{
+        height: $containersVideoHeightPC;
     }
 }

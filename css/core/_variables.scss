@@ -1,4 +1,196 @@
-//Generales
-$imagenBackgroundPag : url('../img/bg.png');
-$colorContainers : white;
-$opacidadContainers : 0.9;
+//MOBILE 320px
+//General Variables
+$pagesBackground : url('../img/bg.png');
+$containersWidth : 100%;
+$containersColor : white;
+$containersOpacity : 0.9;
+$containersPaddingFromLeft : 10px;
+$containersFontSize : 30px;
+$containersVideoWidth : 90%;
+$containersVideoHeight : 300px;
+//Header Variables
+$headerBackgroundImage: url('../img/titulobg.png');
+$headerBackgroundRepeat: no-repeat; 
+$headerBackgroundSize: cover;
+$headerBackgroundMinHeight: 200px;
+$headerBackgroundWidth: 100%;
+$headerTitleFontSize: 50px;
+$headerTextTransform: uppercase;
+$headerTextAlign: center;
+$headerTextPaddingTop: 20%;
+$headerTextColor: hsla(118, 100%, 50%, 0.4);
+$headerTextBackgroundImage: url('../img/titulo.png');
+$headerTextWebkit: text;
+$headerTextAnimation: titulo 15s infinite;
+//Menu Variables
+$menuMarginTop: -10%;
+$menuTextAlign: center;
+$menuBackgroundColor: black;
+$menuTextColor: white;
+$menuWidth: 100%;
+$menuULMarginLeft: -8%;
+$menuULListStyleType: none;
+$menuLIPaddingTop: 10px;
+$menuLIPaddingBottom: 10px;
+$menuAColor: white;
+$menuAPadding: 14px 16px;
+$menuAFontSize: 20px;
+$menuATextDecoration: none;
+$menuATextTransform: uppercase;
+$menuAHoverBackgroundColor: #444;
+$menuActive: #4CAF50;
+//IMG Inicio
+$indexImageWidth: 80%;
+$indexImageHeight: auto;
+//thumbnail variables
+$thumbnailBackgroundColor: black;
+$thumbnailWidth: 50%;
+$thumbnailPaddingTop: 2%;
+$thumbnailImageWidth: 70%;
+$thumbnailImageHeight: auto;
+$thumbnailParaphPaddingBottom: 5px;
+$thumbnailParaphPaddingTop: -20px;
+//caption / text color
+$captionColor: white;
+//Padding entre alimentos
+$categoriesPadding: 15px;
+//Butttons footer
+$btnWidth: 50px;
+$btnHeight: 40px;
+$btnMargin: 10px;
+$btnFontSize: 50px;
+$btnColor: #4CAF50;
+$btnTextDecoration: none;
+$btnFontSize: 35px;
+$btnHoverTransform: scale(1.3);
+$btnHoverColor: #f1f1f1;
+//Button Scroll
+$scrollPosition: fixed;
+$scrollWidth: 40px;
+$scrollHeight: 40px;
+$scrollBackground: #4CAF50;
+$scrollBottom: 20px;
+$scrollRight: 30px;
+$scrollTextDecoration: none;
+$scrollTextAlign: center;
+$scrollLineHeight: 40px;
+$scrollColor: white;
+$scrollFontSize: 25px;
+$scrollHoverColor: black;
+$scrollHTMLBehavior: smooth;
+//Contact US variables
+$contactPosition: fixed;
+$contactTop: 45%;
+$contactZIndex: 99999;
+$contactLeft: 0;
+$contactColor: black;
+$contactDisplay: block;
+$contactWidth: 40px;
+$contactHeight: 40px;
+$contactTextAlign: center;
+$contactLineHeight: 40px;
+$contactBackground: #afff7a;
+$contactFontSize: 20px;
+//Form variables
+$formMaxWidth: 80%;
+$formMargin: auto;
+$formPadding: 0 10px;
+$formOverflow: hidden;
+$formTextAlign: center;
+$formFileMargin: 10px;
+$formInputWidth: 100%;
+$formInputBorder: 0;
+$formInputBackground: black;
+$formInputPadding: 10px;
+$formInputMargin: 5px 0;
+$formInputOutline: none;
+$formInputColor: white;
+$formInputTransition: 0.5s;
+$formInputFocusShadow: 0 0 10px 4px #4CAF50;
+$formButtonBorder: 0;
+$formButtonBackground: black;
+$formButtonColor: white;
+$formButtonPadding: 12px 50px;
+$formButtonBorderRadius: 20px;
+$formButtonCursor: pointer;
+$formButtonTransition: 0.5s;
+$formButtonHoverBackground: #4CAF50;
+//RAFFLE Variables
+$raffleTextAlign: center;
+$raffleWinnerHeight: 150px;
+$raffleWinnerWidth: auto;
+$raffleWinnerVerticalAlign: middle;
+$raffleWinnerTextAlign: center;
+$raffleWinnerBGColor: black;
+$raffleWinnerBGImg: url('../img/snow1.png'), url('../img/snow2.png'), url('../img/snow3.png');
+$raffleWinnerAnimation: nieve 20s linear infinite;
+$raffleWinnerMarginBottom: 10px;
+$raffleWinnerPaddingBottom: 10px;
+$raffleWinnerLineHeight: 50px;
+$raffleWinnerFontSize: 24px;
+$raffleWinnerColor: white;
+$raffleWinnerTextColor: #4CAF50;
+$raffleWinnerTextFontSize: 20px;
+$raffleCriteriosVisibility: hidden;
+$raffleCriteriosMarginBottom: -15%;
+$raffleCriteriosWidth: 50%;
+$raffleCriteriosDisplay: table;
+$raffleCriteriosHeight: auto;
+$raffleCriteriosOverflow: visible;
+$raffleCriteriosBG: black;
+$raffleCriteriosColor: white;
+$raffleCriteriosTransition: all 1s ease;
+$raffleCriteriosPadding: 10px 10px 0;
+$raffleCriteriosTextColor: #4CAF50;
+$raffleCriteriosTableBorder: collapse;
+$raffleCriteriosTableTextAlign: center;
+$raffleTableBorder: 1px solid white;
+$raffleTablePadding: 5px;
+$raffleCriteriosOcultoHeight: 0;
+$raffleCriteriosOcultoOpacity: 0;
+$raffleCriteriosOcultoDisplay: block;
+//Footer Variables
+$footerBackgroundColor: black;
+$footerColor: white;
+$footerPaddingTop: 20px;
+//--------------------------------------------------------------------------------//
+// 375px
+//Header Variables
+$headerTextPaddingTop375: 4%;
+//--------------------------------------------------------------------------------//
+// 425px
+//Header Variables
+$headerTextPaddingTop425: 3%;
+//--------------------------------------------------------------------------------//
+//Tablet 768px
+//General variables
+$containersWidthT: 90%;
+$containerMarginLeftT: 5%;
+$containersVideoHeightT: 370px;
+//Header Variables
+$headerTextPaddingTopT: 8%;
+$headerTitleFontSizeT: 80px;
+$menuMarginTopT: -4%;
+//IMG Inicio
+$indexImageWidthT: 60%;
+//--------------------------------------------------------------------------------//
+//PC/BigTablets 1024px
+//General variables
+$containersVideoHeightPT: 460px;
+//Header Variables
+$headerTextPaddingTopPT: 5%;
+$menuMarginLeftPT: 10%;
+$menuWidthPT: 80%;
+$menuMarginTopPT: -2.3%;
+//IMG Inicio
+$indexImageWidthPT: 30%;
+//RAFFLE
+$raffleCriteriosVisibilityPT: visible;
+$raffleCriteriosMarginBottomPT: 0%;
+//--------------------------------------------------------------------------------//
+//PC 1440px
+//General variables
+$containersVideoHeightPC: 750px;
+//Header Variables
+$headerTextPaddingTopPC: 1.5%;
+$menuMarginTopPC: -1.7%;
