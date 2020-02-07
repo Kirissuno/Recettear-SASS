@@ -17,7 +17,7 @@ $headerBackgroundWidth: 100%;
 $headerTitleFontSize: 50px;
 $headerTextTransform: uppercase;
 $headerTextAlign: center;
-$headerTextPaddingTop: 20%;
+$headerTextPaddingTop: 50px;
 $headerTextColor: hsla(118, 100%, 50%, 0.4);
 $headerTextBackgroundImage: url('../img/titulo.png');
 $headerTextWebkit: text;
@@ -52,8 +52,18 @@ $thumbnailParaphPaddingBottom: 5px;
 $thumbnailParaphPaddingTop: -20px;
 //caption / text color
 $captionColor: white;
-//Padding entre alimentos
-$categoriesPadding: 15px;
+//Grid variables, recipes images, paddings, etc.
+$foodsPaddingTop: 20px;
+$foodsBTagsPaddingLeft: 10%;
+$foodsAHREFDecorations: none;
+$foodsAHREFColors: green;
+$foodsImagesWidth: 100%;
+$foodImageWidth: 100%;
+$foodSourcePaddingBottom: 10px;
+$gridContainerDisplay: grid;
+$gridContainerTemplateColumns: auto auto auto;
+$gridItemPadding: 20px;
+$gridTextAlign: center;
 //Butttons footer
 $btnWidth: 50px;
 $btnHeight: 40px;
@@ -173,6 +183,8 @@ $headerTitleFontSizeT: 80px;
 $menuMarginTopT: -4%;
 //IMG Inicio
 $indexImageWidthT: 60%;
+//ImageRecipes variables
+$foodsImagesWidthT: 70%;
 //--------------------------------------------------------------------------------//
 //PC/BigTablets 1024px
 //General variables
@@ -184,6 +196,9 @@ $menuWidthPT: 80%;
 $menuMarginTopPT: -2.3%;
 //IMG Inicio
 $indexImageWidthPT: 30%;
+//ImageRecipes variables
+$foodsImagesWidthPT: 70%;
+$foodImageWidthPT: 70%;
 //RAFFLE
 $raffleCriteriosVisibilityPT: visible;
 $raffleCriteriosMarginBottomPT: 0%;
@@ -194,3 +209,6 @@ $containersVideoHeightPC: 750px;
 //Header Variables
 $headerTextPaddingTopPC: 1.5%;
 $menuMarginTopPC: -1.7%;
+//ImageRecipes variables
+$foodsImagesWidthPC: 60%;
+$foodImageWidthPC: 50%;

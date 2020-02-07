@@ -25,6 +25,7 @@
 }
 
 .ganadoranterior b {
+    padding-left: (-$foodsBTagsPaddingLeft);
     line-height: $raffleWinnerLineHeight;
     font-size: $raffleWinnerFontSize;
     color: $raffleWinnerColor;

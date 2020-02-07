@@ -30,13 +30,7 @@
 				<a href="../../index.html">Inicio</a>
 			</li>
 			<li>
-				<a href="../dulces.html" class="active">Dulces</a>
-			</li>
-			<li>
-				<a href="../salados.html">Salados</a>
-			</li>
-			<li>
-				<a href="../bebidas.html">Bebidas</a>
+				<a href="../recetas.html" class="active">Recetas</a>
 			</li>
 			<li>
 				<a href="../sorteos.html">Sorteos</a>
@@ -71,24 +65,34 @@
 	<div class="container" style="margin-top:30px">
 		<!-- CUERPO -->
 		<br>
-		<h2 align="center">Titulo</h2>
-		<br>
-		<div class="dulces" align="center">
-			<img src="../../img/salados/pimientos.jpg">
-		</div>
-		<hr>
-		<div>
-			<b>INGREDIENTES</b>
-			<ul>
-				
-			</ul>
+		<div class="container detalles" id="appDetalles">
+			<h2 align="center">{{receta.name}}</h2>
+			<div align="center">
+				<img class="imagenReceta" :src="receta.imageURL">
+			</div>
+			<br>
 			<hr>
-			<b>ELABORACIÓN</b>
-			<ol>
-				
-			</ol>
-			<hr>
+			<div>
+				<b>Ingredients</b>
+				<ul>
+					<li v-for="ingredient in receta.ingredients">
+						{{ingredient.quantity}} {{ingredient.name}}
+					</li>
+				</ul>
+				<hr>
+				<b>Steps</b>
+				<ol>
+					<li v-for="step in receta.steps">
+						{{step}}
+					</li>
+				</ol>
+				<hr>
+			</div>
+			<div v-if="receta.originalURL != null" class="source" style="text-align: center;">
+				<a :href="`${receta.originalURL}`">Source</a>
+			</div>
 		</div>
+
 	</div>
 
 	<br>
@@ -119,6 +123,11 @@
 	<!-- ARRIBA!! xD -->
 	<a class="arriba" href="#"> <i class="fas fa-arrow-up"></i></a>
 
+
+
+	<script src="https://unpkg.com/vue"></script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script src="../detalles/detalles.js"></script>
 </body>
 
 </html>

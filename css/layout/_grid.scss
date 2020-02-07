@@ -39,20 +39,75 @@
     color: $captionColor;
 }
 
-/* CUERPO DULCES*/
-
-.dulces {
-    padding: $categoriesPadding;
+.comidas{
+    padding-top: $foodsPaddingTop;
 }
 
-/* CUERPO SALADOS */
-
-.salados {
-    padding: $categoriesPadding;
+.detalles b{
+    padding-left: $foodsBTagsPaddingLeft;
 }
 
-/* CUERPO BEBIDAS */
+.recetas, .recetas:visited, .recetas:hover, .recetas:active{
+    text-decoration: $foodsAHREFDecorations;
+    color: $foodsAHREFColors;
+}
 
-.bebidas {
-    padding: $categoriesPadding;
+.imagenRecetas{
+    width: $foodsImagesWidth;
+}
+
+.imagenReceta{
+    width: $foodImageWidth;
+}
+
+.source a, .source a:visited, .source a:hover, .source a:active{
+    text-decoration: $foodsAHREFDecorations;
+    color: $foodsAHREFColors;
+}
+
+.source{
+    padding-bottom: $foodSourcePaddingBottom;
+}
+
+
+
+// tablet
+@media(min-width: 768px) {
+    .imagenRecetas{
+        width: $foodsImagesWidthT;
+    }
+}
+// Desde PC
+@media(min-width: 1024px) {
+    .imagenRecetas{
+        width: $foodsImagesWidthPT;
+    }
+    .imagenReceta{
+        width: $foodImageWidthPT;
+    }
+    .grid-container{
+        display: $gridContainerDisplay;
+        grid-template-columns: $gridContainerTemplateColumns;
+    }
+    .grid-item{
+        padding: $gridItemPadding;
+        text-align: $gridTextAlign;
+    }
+}
+
+@media(min-width: 1440px) {
+    .imagenRecetas{
+        width: $foodsImagesWidthPC;
+    }
+    .imagenReceta{
+        width: $foodImageWidthPC;
+    }
+    .grid-container{
+        display: $gridContainerDisplay;
+        grid-template-columns: $gridContainerTemplateColumns;
+    }
+    .grid-item{
+        padding: $gridItemPadding;
+        text-align: $gridTextAlign;
+    }
 }

@@ -62,22 +62,9 @@
     }
 }
 
-@media(min-width: 375px) {
-    #titulo h1{
-        padding-top: $headerTextPaddingTop375;
-    }
-}
-
-@media(min-width: 425px) {
-    #titulo h1 {
-        padding-top: $headerTextPaddingTop425;
-    }
-}
-
 // tablet
 @media(min-width: 768px) {
     #titulo h1 {
-        padding-top: $headerTextPaddingTopT;
         font-size: $headerTitleFontSizeT;
     }
     .menu {
@@ -86,9 +73,6 @@
 }
 // Desde PC
 @media(min-width: 1024px) {
-    #titulo h1 {
-        padding-top: $headerTextPaddingTopPT;
-    }
     .menu {
         margin-left: $menuMarginLeftPT;
         width: $menuWidthPT;
@@ -97,9 +81,7 @@
 }
 
 @media(min-width: 1440px) {
-    #titulo h1 {
-        padding-top: $headerTextPaddingTopPC;
-    }
+
     .menu {
         margin-top: $menuMarginTopPC;
     }

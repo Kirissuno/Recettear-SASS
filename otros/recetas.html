@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Recettear</title>
-	<link rel="stylesheet" href="../../css/general.css">
+	<link rel="stylesheet" href="../css/general.css">
 	<meta name="responsive" content="width=device-width, initial-scale=1">
 	<meta name="viewport" content="width=device-width" />
 
@@ -27,19 +27,13 @@
 	<div class="menu">
 		<ul>
 			<li>
-				<a href="../../index.html">Inicio</a>
+				<a href="../index.html">Inicio</a>
 			</li>
 			<li>
-				<a href="../dulces.html">Dulces</a>
+				<a href="recetas.html" class="active">Recetas</a>
 			</li>
 			<li>
-				<a href="../salados.html">Salados</a>
-			</li>
-			<li>
-				<a href="../bebidas.html" class="active">Bebidas</a>
-			</li>
-			<li>
-				<a href="../sorteos.html">Sorteos</a>
+				<a href="sorteos.html">Sorteos</a>
 			</li>
 		</ul>
 	</div>
@@ -68,26 +62,19 @@
 	</div>
 
 	<!-- CONTENIDO -->
-	<div class="container" style="margin-top:30px">
+	<div class="container">
 		<!-- CUERPO -->
-		<br>
-		<h2 align="center">Titulo</h2>
-		<br>
-		<div class="dulces" align="center">
-			<img src="../../img/salados/pimientos.jpg">
-		</div>
-		<hr>
-		<div>
-			<b>INGREDIENTES</b>
-			<ul>
-				
-			</ul>
-			<hr>
-			<b>ELABORACIÓN</b>
-			<ol>
-				
-			</ol>
-			<hr>
+		<div class="comidas" align="center">
+			<div>
+				<div id="app" class="grid-container">
+					<div class="grid-item" v-for="(receta, index) in recetas">
+						<a class="recetas" :href="'detalles/detalles.html?'+index">
+						<img class="imagenRecetas" :src="receta.imageURL" width="90%">
+						<br>
+						{{receta.name}}</a>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 
@@ -119,6 +106,12 @@
 	<!-- ARRIBA!! xD -->
 	<a class="arriba" href="#"> <i class="fas fa-arrow-up"></i></a>
 
+
+
+
+	<script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="recetas.js"></script>
 </body>
 
 </html>
