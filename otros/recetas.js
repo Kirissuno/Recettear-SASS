@@ -18,7 +18,7 @@ const vm = new Vue({
     recetaEspecífica: []
   }, 
   mounted() {
-      axios.get('http://my-json-server.typicode.com/Kirissuno/recetasJSONAPI/recetas')
+      axios.get('https://my-json-server.typicode.com/Kirissuno/recetasJSONAPI/recetas')
           .then(data => {
             console.log(data)
             this.recetas = data.data;
